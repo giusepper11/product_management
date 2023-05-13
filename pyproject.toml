@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "product-management"
+version = "0.1.0"
+description = ""
+authors = ["Giuseppe Rosa <giusepper11@gmail.com>"]
+readme = "README.md"
+packages = [{include = "product_management"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+fastapi = "^0.95.1"
+uvicorn = "^0.22.0"
+sqlalchemy = {extras = ["mypy"], version = "^2.0.13"}
+psycopg2-binary = "^2.9.6"
+pytest = "^7.3.1"
+alembic = "^1.10.4"
+python-decouple = "^3.8"
+black = "^23.3.0"
+httpx = "^0.24.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
